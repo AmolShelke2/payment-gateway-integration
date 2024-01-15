@@ -75,14 +75,17 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <button onClick={paymentHandler}>Pay ₹ 5</button>
-      </header>
+    <div className="product-wrapper">
+      <div className="product-card">
+        <img
+          src="https://cdn.dribbble.com/userupload/5297150/file/original-c0655144648b780dda154a62a1819cda.png?resize=1024x768"
+          alt="design-product"
+        />
+        <div className="footer">
+          <p>₹ 500</p>
+          <button onClick={paymentHandler}>Buy Now</button>
+        </div>
+      </div>
     </div>
   );
 }
